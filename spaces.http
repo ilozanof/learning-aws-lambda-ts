@@ -1,0 +1,30 @@
+
+
+// NOTE: The Ids are taken fro the Physical ID of the API once deployed.
+
+GET https://rhei8vkfc4.execute-api.eu-west-3.amazonaws.com/prod/spaces
+###
+
+POST https://rhei8vkfc4.execute-api.eu-west-3.amazonaws.com/prod/spaces
+Content-Type: application/json
+
+{
+    "location": "Paris",
+    "name": "Paris forever"
+}
+###
+
+GET https://rhei8vkfc4.execute-api.eu-west-3.amazonaws.com/prod/spaces?id=9135b335-7c17-491f-b0a9-30737775e4ec
+###
+
+
+PUT https://rhei8vkfc4.execute-api.eu-west-3.amazonaws.com/prod/spaces?id=9135b335-7c17-491f-b0a9-30737775e4ec
+Content-Type: application/json
+
+{
+    "location": "Aviles"
+}
+###
+
+DELETE https://rhei8vkfc4.execute-api.eu-west-3.amazonaws.com/prod/spaces?id=640abc56-39bd-40b9-935a-6e41d6778756
+###
